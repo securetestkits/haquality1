@@ -3334,6 +3334,31 @@ label {
 }
 /*# sourceMappingURL=style.css.map */
 
+#services .accordion-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed for a rectangle */
+  font-size: 18px;
+  color: #ffffff; /* White - Adjust the color as needed */
+  background-color: #ff0000; /* Red - Adjust the color as needed */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+#services .accordion-btn:hover {
+  background-color: #ffffff; /* White - Adjust the color as needed */
+  color: #ff0000; /* Red - Adjust the color as needed */
+}
+
+#services .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+#services .accordion-content.active {
+  max-height: 500px; /* Adjust the max-height as needed */
+}
 
 #services .accordion-content ul {
   list-style: none;
