@@ -3356,13 +3356,15 @@ label {
   transition: max-height 0.3s ease-out;
 }
 
-#services .accordion-content.active {
+#services .accordion-btn.active + .accordion-content {
   max-height: 500px; /* Adjust the max-height as needed */
+  transition: max-height 0.3s ease-in; /* Added transition for smoother effect */
 }
 
 #services .accordion-content ul {
   list-style: none;
   padding: 0;
+  margin-top: 0; /* Adjust margin as needed */
 }
 
 #services .accordion-content ul li {
