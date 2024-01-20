@@ -3334,56 +3334,62 @@ label {
 }
 /*# sourceMappingURL=style.css.map */
 
-#services .accordion-btn {
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative;
   display: inline-block;
-  padding: 10px 20px; /* Adjust padding as needed for a rectangle */
+}
+
+.dropdown-btn {
+  background-color: #d9534f; /* Elegant red button color */
+  color: #fff; /* White text color */
+  padding: 12px 16px;
   font-size: 18px;
-  color: #ffffff; /* White - Adjust the color as needed */
-  background-color: #ff0000; /* Red - Adjust the color as needed */
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  border: none;
   cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#services .accordion-btn:hover {
-  background-color: #ffffff; /* White - Adjust the color as needed */
-  color: #ff0000; /* Red - Adjust the color as needed */
+.dropdown-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
 }
 
-#services .accordion-content {
-  max-height: 0;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* White background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 6px;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
 }
 
-#services .accordion-btn.active + .accordion-content {
-  max-height: 500px; /* Adjust the max-height as needed */
-  transition: max-height 0.3s ease-in; /* Added transition for smoother effect */
-}
-
-#services .accordion-content ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 0; /* Adjust margin as needed */
-}
-
-#services .accordion-content ul li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+.dropdown-content p {
+  color: #333; /* Black text color */
+  padding: 14px 18px;
+  text-decoration: none;
+  display: block;
   transition: background-color 0.3s;
 }
 
-#services .accordion-content ul li:hover {
-  background-color: #ff0000; /* Red - Adjust the color as needed */
-  cursor: pointer;
+.dropdown-content p:hover {
+  background-color: #f8f9fa; /* Light gray background on hover */
 }
 
-#services .accordion-content ul li a {
+/* Additional Styles for Footer */
+#footer {
+  background-color: #343a40; /* Dark gray footer background color */
+  color: #fff; /* White text color */
+  padding: 30px 0;
+}
+
+#footer a {
+  color: #fff; /* White text color for footer links */
   text-decoration: none;
-  color: #000000; /* Black - Adjust the color as needed */
   transition: color 0.3s;
 }
 
-#services .accordion-content ul li a:hover {
-  color: #ffffff; /* White - Adjust the color as needed */
+#footer a:hover {
+  color: #d9534f; /* Elegant red link color on hover */
 }
